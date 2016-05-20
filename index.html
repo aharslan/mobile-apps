@@ -1,0 +1,996 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+<script src="jquery.js"></script>
+<script src="jquery.mobile-1.4.5.js"></script>
+
+<link rel="stylesheet" href="themes/FAST.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+
+
+<body> 
+		<!--Main Page-->
+<div data-role="page" id="mainPage">
+
+	<div data-role="header" data-position="fixed" >
+		<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+		<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+	</div>
+	
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#campusPage" >Campuses</a></li>
+			<li><a href="#admissionsPage">Admissions</a></li>
+            <li><a href="#departmentPage">Departments</a></li>	
+		</ul>
+		<p>
+		<h1>National University of Computer and Emerging Sciences</h1>
+		<h2>History</h2>
+		The National University of Computer & Emerging Sciences has the honor of being the first multi-campus private sector university set up under the Federal Charter granted by Ordinance No.XXIII of 2000, dated July 01, 2000.<br>
+		The University started with an impressive advantage in that, thanks to the selfless, ceaseless and imaginative efforts of the Foundation FAST, it inherited four first rate computer science institutes located at Karachi, Lahore, Islamabad and Peshawar, in spacious buildings and prestigious settings.<br>
+		These institutes, individually as well as collectively, have established leadership position due to the splendid vision of an enlightened management and tireless efforts of a highly qualified faculty. Over the years FAST has become the hallmark of excellence in academic arena, domestic market and international community.<br>
+		</p>
+		<h2>Mission Statement</h2>
+		In line with the thrust of our faith and glory of our heritage, we shall try our best to play an effective and meaningful role in creating a knowledge based society in Pakistan. This avenue would naturally and seamlessly lead to a civil society with knowledge driven economy.
+In furtherance of these general objectives, we shall focus upon acquisition and propagation of cutting edge science and technologies. Recognizing the fact that Information Technology is having a profound impact upon almost every aspect of human activity and changing the shape of our future. We shall retain our focus, for the time being, on producing graduates in Computer Science, Engineering, Business Management and Basic Sciences as well as managers of the highest order who may act as vanguard of the IT Revolution in Pakistan.<br>
+We believe that enormous educational potential of computer science, if used wisely, widely and vigorously, can be a powerful vehicle of social equalization.<br>
+In line with its philosophy, satisfaction of the financial needs of the poor, and opening doors of opportunities of highly expensive education to the indigent and disempowered, are the greatest moral achievements of the Foundation.<br>
+In pursuit of this noble objectives, the University shall faithfully, vigorously and dedicatedly follow that policy to fulfill the requirements of equality of opportunity and social justice.<br>
+Realizing that the success of IT revolution requires concerted efforts of many, not a few, we shall establish a formal network of cooperative and collaborative relationship with centers of excellence within and outside Pakistan. The quality of human beings shall remain center of our focus. It shall be our constant endeavor to produce, not only excellent scientists and good technicians, but also well balanced human beings with strong sense of values.<br>
+		</p>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>Copyright © 2000 - 2015 , NUCES. 
+		<br>All Rights Reserved.</h4>
+	</div>
+	
+</div>
+		<!--Main Page-->
+
+		
+		
+		<!--Admissions Page-->
+<div data-role="page" id="admissionsPage">
+
+	<div data-role="header" data-position="fixed" >
+		<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+		<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+		<a href="#mainPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+	</div>
+	
+	<div data-role="content">
+		<h2>Admissions</h2>
+	
+		<!--ADmissions Collapsiable-->
+		<div data-role="collapsible">
+		<h3>Admission Schedule</h3>
+        <p>
+				<h3>Tentative Admission Schedule for 2014</h3>
+				<table data-role="table"  class="ui-responsive" id="myTable">
+			  <thead>
+				<tr>
+				  <th></th>
+				  <th>BBA & BS</th>
+				  <th>MBA, MS & PhD</th>
+				  <th>PhD</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Application Submission</td>
+				  <td>Jun 9 - 28 (Mon-Sat)</td>
+				  <td>Jun 9 - 28 (Mon-Sat)</td>
+				  <td>Jan 31, 2015 (Sat)</td>
+				</tr>
+				<tr>
+				  <td>Admission Tests</td>
+				  <td>Jul 1 - 7 (Tue-Mon)</td>
+				  <td>Jul 1 - 7 (Tue-Mon)</td>
+				  <td>-</td>
+				</tr>
+				<tr>
+				  <td>Declaration of selected Candidates</td>
+				  <td>Jul 19 (Sat)</td>
+				  <td>Jul 12 (Sat)</td>
+				  <td>-</td>
+				</tr>
+				<tr>
+				  <td>Interviews</td>
+				  <td>-</td>
+				  <td>Jul 15 - 17 (Tue-Thu)</td>
+				  <td>-</td>
+				</tr>
+				<tr>
+				  <td>Admission Formalities</td>
+				  <td>Jul 21 - 24 (Mon-Thu)</td>
+				  <td>Jul 28 - 30 (Mon-Wed)</td>
+				  <td>-</td>
+				</tr>
+
+			  </tbody>
+			</table>
+	     </p>
+		 </div>
+		 
+		 <div data-role="collapsible">
+			<h3>Programs Offered</h3>
+			<p>
+			<h3>Programs Offered in Campuses</h3>
+			
+				<div data-role="collapsible">
+				<h4>Islamabad</h4>
+				<p>
+						<div data-role="collapsible">
+						<h5>Phd</h5>
+						<p>
+							Computer Science<br>
+							Electrical Engineering<br>
+							Management Sciences<br>
+						</p>
+						</div>
+						
+						<div data-role="collapsible">
+						<h5>Masters</h5>
+						<p>
+								Business Administration (1½- year)<br>
+								Business Administration (2- year)<br>
+								Computer Science<br>
+								Electrical Engineering<br>
+								Software Engineering<br>
+						</p>
+						</div>
+						
+						<div data-role="collapsible">
+						<h5>Bachelors</h5>
+						<p>
+								Business Administration<br>
+								Accounting & Finance<br>
+								Computer Science<br>
+								Electrical Engineering<br>
+						</p>
+						</div>
+				</p>
+				</div>
+				
+				<div data-role="collapsible">
+				<h4>Karachi</h4>
+				<p>
+						<div data-role="collapsible">
+						<h5>Phd</h5>
+						<p>
+							Computer Science<br>
+							Electrical Engineering<br>
+						</p>
+						</div>
+						
+						<div data-role="collapsible">
+						<h5>Masters</h5>
+						<p>
+								Business Administration (1½- year)<br>
+								Business Administration (2- year)<br>
+								Computer Network & Security<br>
+								Computer Science<br>
+								Electrical Engineering<br>
+								Software Project Management<br>
+						</p>
+						</div>
+						
+						<div data-role="collapsible">
+						<h5>Bachelors</h5>
+						<p>
+								Business Administration<br>
+								Accounting & Finance<br>
+								Computer Science<br>
+								Electrical Engineering<br>
+						</p>
+						</div>
+				</p>
+				</div>
+				
+				<div data-role="collapsible">
+				<h4>Lahore</h4>
+				<p>
+						<div data-role="collapsible">
+						<h5>Phd</h5>
+						<p>
+							Computer Science<br>
+							Electrical Engineering<br>
+							Mathematics<br>
+							Management Sciences<br>
+						</p>
+						</div>
+						
+						<div data-role="collapsible">
+						<h5>Masters</h5>
+						<p>
+								Business Administration (1½- year)<br>
+								Computer Science<br>
+								Civil Engineering<br>
+								Electrical Engineering<br>
+								Mathematics<br>
+								Software Project Management<br>
+						</p>
+						</div>
+						
+						<div data-role="collapsible">
+						<h5>Bachelors</h5>
+						<p>
+								Business Administration<br>
+								  Accounting & Finance<br>
+								  Computer Science<br>
+								  Civil Engineering<br>
+								  Electrical Engineering <br>
+						</p>
+						</div>
+				</p>
+				</div>
+				
+				<div data-role="collapsible">
+				<h4>Peshawar</h4>
+				<p>
+						<div data-role="collapsible">
+						<h5>Phd</h5>
+						<p>
+								Computer Science<br>
+								Electrical Engineering<br>
+						</p>
+						</div>
+						
+						<div data-role="collapsible">
+						<h5>Masters</h5>
+						<p>
+								Computer Science<br>
+								Electrical Engineering<br>
+						</p>
+						</div>
+						
+						<div data-role="collapsible">
+						<h5>Bachelors</h5>
+						<p>
+								Business Administration<br>
+								Computer Science<br>
+								Electrical Engineering<br>
+						</p>
+						</div>
+				</p>
+				</div>
+				
+				<div data-role="collapsible">
+				<h4>Chaniot-Faisalabad</h4>
+				<p>
+						<div data-role="collapsible">
+						<h5>Masters</h5>
+						<p>
+								Business Administration (1½- year)<br>
+								Business Administration (2- year)<br>
+								Computer Science<br>
+								Electrical Engineering<br>
+						</p>
+						</div>
+						
+						<div data-role="collapsible">
+						<h5>Bachelors</h5>
+						<p>
+								Business Administration<br>
+								  Accounting & Finance<br>
+								  Computer Science<br>
+								  Electrical Engineering <br>
+						</p>
+						</div>
+				</p>
+				</div>
+			</p>
+		 </div>
+		 
+		 <div data-role="collapsible">
+		<h3>Eligibility Criteria</h3>
+        <p>
+				<div data-role="collapsible">
+				<h3>UnderGraduate</h3>
+				<p>Those who have taken the HSSC or an equivalent examination and are awaiting result are also eligible to apply. The four-year undergraduate programs of full time study are divided into eight semesters.<br><br><br>
+					1. BS(Civil Engineering/Electrical Engineering)<br>
+					Eligibility<br>
+						- At least 60% marks in Matriculation or an equivalent examination AND<br>
+						- At least 60% marks in HSSC (Pre-Engineering) or an equivalent examination.<br><br>
+					Selection Criteria<br>
+					Selection on the basis of NTS-NAT Marks<br>
+						- Those who have taken NAT-IE examination can apply for admission to the BS(Civil/Electrical) Engineering.<br>
+						- Cut-off marks to be determined by the Admission Committee of the University.<br><br>
+					Selection on the basis of NU Admission Test<br>
+					- Merit is determined by assigning 40% weight to marks obtained in Intermediate (part-I) (or an equivalent exam).<br>
+					- For those whose Intermediate results are not available, their Matriculation marks are considered.<br>
+					- Marks obtained in the NU Online Admission Test are assigned the remaining 60% weight.<br><br>
+					Selection on the basis of SAT score<br>
+					- Combined score of 1,500 or more in the SAT-I examination AND<br>
+					- At least 550 in the SAT-II (Math Level IIC) examination.<br><br><br>
+					
+					2. BS (Computer Science)<br>
+					Eligibility<br>
+					- At least 60% marks in Matriculation or an equivalent examination AND<br>
+					- At least 50% marks in HSSC or an equivalent examination. Must have studied Mathematics at HSSC level.<br><br>
+					Selection Criteria<br>
+					Selection on the basis of NTS-NAT Marks<br>
+					- Those who have taken NAT-IE or NAT-ICS examination can apply for admission to the BS (Computer Science).<br>
+					- Cut-off marks to be determined by the Admission Committee of the University.<br><br>
+					Selection on the basis of NU Admission Test<br>
+					- Merit is determined by assigning 40% weight to marks obtained in Intermediate (part-I) (or an equivalent exam).<br>
+					- For those whose Intermediate results are not available, their Matriculation marks are considered.<br>
+					- Marks obtained in the NU Online Admission Test are assigned the remaining 60% weight.<br><br>
+					Selection on the basis of SAT score<br>
+					- Combined score of 1,500 or more in the SAT-I examination AND<br>
+					- At least 550 in the SAT-II (Math Level IIC) examination.<br><br><br>
+					3. BBA/BS (Accounting & Finance)<br>
+					Eligibility<br>
+					- At least 60% marks in Matriculation or an equivalent examination AND<br>
+					- Passed the HSSC or an equivalent examination.<br><br>
+					Selection Criteria<br>
+					Selection on the basis of NTS-NAT Marks<br>
+					- Those who have taken NAT-IE, NAT-ICS, NAT-IM, NAT-IGS or NAT-ICOM examination can apply for admission to the BBA/BS(A&F).<br>
+					- At least 70% marks in NTS Examination.<br><br>
+					Selection on the basis of NU Admission Test<br>
+					- Merit is determined by assigning 40% weight to marks obtained in Intermediate (part-I) (or an equivalent exam).<br>
+					- For those whose Intermediate results are not available, their Matriculation marks are considered.<br>
+					- Marks obtained in the NU Online Admission Test are assigned the remaining 60% weight.<br><br>
+					Selection on the basis of SAT score<br>
+					- Combined score of 1,500 or more in the SAT-I examination.
+					</p>
+				</div>
+				
+				<div data-role="collapsible">
+				<h3>Graduate</h3>
+				<p>
+						1. MBA (1½-year)<br>
+						Eligibility<br>
+						- BBA or an equivalent degree from a recognized university received after 16 years of education AND<br>
+						- At least 60% marks or CGPA of at least 2.0.<br>
+						Graduates of BS (Accounting and Finance) are eligible for admission in MBA programs; provided they have studied at least two courses in each of the following two streams (Marketing and Management).<br>
+						Selection Criteria<br>
+						50% weight<br>
+						Performance in any one of the following tests:<br>
+						- NU MBA (1½-year) Admission Test OR<br>
+						- NTS Subject GAT (Minimum 50 Marks and 50 Percentile rank) OR<br>
+						50% weight<br>
+						- Performance in group discussion/ interview.<br><br>
+						2. MBA (2-year)<br>
+						Eligibility<br>
+						- A degree earned from a recognized university after 16 years of non-business education AND<br>
+						- At least 60% marks or CGPA of at least 2.0(on a scale of 4.0).<br>
+						Selection Criteria<br>
+						50% weight<br>
+						Performance in any one of the following tests:<br>
+						- NU MBA (2-year) Admission Test OR<br>
+						- NTS Subject GAT (Minimum 50 Marks and 50 Percentile rank)<br>
+						50% weight<br>
+						- Performance in group discussion/ interview.<br><br>
+						3. MS (Software Project Management)<br>
+						Eligibility<br>
+						- A degree in Science / Engineering earned from a recognized university after 16 years of education.<br>
+						- At least 60% marks or CGPA of at least 2.0.<br>
+						- Two years of post qualification experience in software development or related area.<br>
+						Selection Criteria<br>
+						Performance in any one of the following tests:<br>
+						- NU MS (SPM) Admission Test OR<br>
+						- NTS Subject GAT (Minimum 50 Marks and 50 Percentile rank)<br><br>
+						4. MS (Software Engineering)<br>
+						Eligibility<br>
+						- Bachelor’s degree (16 years of education) in the Computer Science or Software Engineering program from an HEC recognised   university (or equivalence issued by HEC).<br>
+						- At least 60% marks or CGPA of at least 2.0.<br>
+						Selection Criteria<br>
+						Performance in any one of the following tests:<br>
+						- NU MS Subject Admission Test OR<br>
+						- NTS Subject GAT (minimum 50 marks and 50 percentile rank)<br><br>
+						5. MS (Computer Science/ Computer Networks & Security)<br>
+						Eligibility<br>
+						- Degree in relevant subject, earned from a recognized university after 16 years of education AND<br>
+						- At least 60% marks or CGPA of at least 2.0<br>
+						Selection Criteria<br>
+						Admission is based on candidate’s performance in any one of the following two tests:<br>
+						- NU MS Subject Admission Test OR<br>
+						- NTS Subject GAT (Minimum 50 Marks and 50 Percentile rank)<br><br>
+						6. MS (Electrical Engineering)<br>
+						Eligibility<br>
+						- Bachelor Degree in a relevant engineering discipline (Electrical, Telecommunications, or Computer engineering, etc.), recognized by   Pakistan Engineering Council (PEC).<br>
+						- Minimum CGPA of 2.0 (on a scale of 4.0) or at least 60% marks.<br>
+						Selection Criteria<br>
+						Admission is based on candidate’s performance in any one of the following two tests:<br>
+						- NU MS Subject Admission Test OR<br>
+						- NTS Subject GAT (Minimum 50 Marks and 50 Percentile rank)<br><br>
+						7. MS (Civil Engineering)<br>
+						Eligibility<br>
+						- Degree in relevant subject, earned from a recognized university after 16 years of education AND<br>
+						- At least 60% marks or CGPA of at least 2.0<br>
+						Selection Criteria<br>
+						- Minimum 50 marks and 50 percentile rank in NTS-subject GAT (Civil Engineering)<br><br>
+						8. MS (Mathematics)<br>
+						Eligibility<br>
+						- Degree in relevant subject, earned from a recognized university after 16 years of education AND<br>
+						- At least 55% marks or CGPA of at least 2.0<br>
+						Selection Criteria<br>
+						Admission is based on candidate’s performance in any one of the following two tests:<br>
+						- NU MS Subject Admission Test OR<br>
+						- NTS Subject GAT (Minimum 50 Marks and 50 Percentile rank)<br><br>
+						9. PhD (Computer Science/ Mathematical Sciences/ Electrical Engineering/Management Sciences)<br>
+						Eligibility<br>
+						- A degree in a relevant subject, earned from a recognized university after 18 years of relevant education AND<br>
+						- At least 70% marks or CGPA of at least 3.0 AND<br>
+						Selection Criteria<br>
+						Admission is based on candidate’s performance in the following:<br>
+						- Minimum 60% marks and at least 50 percentile rank in NTS-Subject GAT or International GRE Subject Test AND<br>
+						- Interview (to assess research potential)<br>
+				</p>
+				</div>
+		</p>
+		</div>	
+		
+		<div data-role="collapsible">
+		<h3>Fee Structure for 2013-14</h3>
+        <p> 
+			<h3>Fees</h3>
+			Admission Fee of Rs 15,000 is payable once at the time of admission. If a graduate of this University is admitted to a higher degree program, then admission fee is not payable again.
+Fee is 		payable in full before the start of semester. It is subject to revision every year. For the academic year 2014-15, following tuition fee shall be charged.
+			
+			<h3>Students Admitted in fall 2014</h3>
+			<table data-role="table" class="ui-responsive">
+			<thead>
+				<tr>
+				  <th></th>
+				  <th>BBA & BS</th>
+				  <th>MBA</th>
+				  <th>MS / PhD</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			<tr>
+				<td>Admission Fee</td>
+				<td>15,000</td>
+				<td>15,000</td>
+				<td>15,000</td>
+			</tr>
+			<tr>
+				<td>Tuition Fee</td>
+				<td> 6,500 per credit hour</td>
+				<td> 6,500 per credit hour</td>
+				<td> 6,500 per credit hour</td>
+			</tr>
+			</tbody>
+			</table>
+		</p>
+		</div>
+		<!--ADmissions Collapsiable-->
+	
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>Copyright © 2000 - 2015 , NUCES. 
+		<br>All Rights Reserved.</h4>
+	</div>
+</div>
+</div>
+		<!--Admissions Page-->
+		
+
+		<!--Campuses Page-->
+<div data-role="page" id="campusPage">
+
+	<div data-role="header" data-position="fixed" >
+		<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+		<h1 style="text-align:left; margin-left:20px;"> <font size="5">FAST Insider</font> </h1>
+		<a href="#mainPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Home</a>
+	</div>
+	
+	<div data-role="content">
+		<h2>Campuses</h2>
+		<ul data-role="listview">
+		  <li><a href="#islPage">Islamabad</a></li>
+		  <li><a href="#kchPage">Karachi</a></li>
+		  <li><a href="#lhrPage">Lahore</a></li>
+		  <li><a href="#pwrPage">Peshawar</a></li>
+		  <li><a href="#cfPage">Chaniot-Faisalabad</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Copyright © 2000 - 2015 , NUCES. 
+		<br>All Rights Reserved.</h4>
+	</div>
+</div>
+	<!--Campuses Page-->
+	
+	
+		<div data-role="page" id="islPage">
+		
+			<div data-role="header" data-position="fixed" >
+				<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+				<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+				<a href="#campusPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+			</div>
+			
+			<div data-role="content">
+					<h1>Islamabad Campus</h1>
+					<p>
+					Seated along the Kashmir Highway, the Islamabad Campus holds in view the capital city, with mystic thoughtfulness. A majestic banyan tree strikes the eye of the visitor before the overshadowed Campus’s beauty can capture his attention. The visitor experiences an instantaneous dilemma. He does not know whether to admire the panoramic scenery of the city, which lies before his eyes or marvel the academic décor of the Campus. Spread over a 15-acre land, right in the academic hub of the city, Islamabad Campus is steadily expanding both in terms of its area and study programs.<br>
+					The highly qualified, deeply committed, and professionally inspired faculty gives to the university an academic character. The faculty not only excels in their teaching abilities but also keep themselves abreast of the latest trends and developments in science and technology. They are also accomplished researchers, contributors, and developers in their respective areas of interest. The research projects carried out at the Campus range from Bio-Informatics, Agro-Informatics, Machine Intelligence, and Neural Networks to IT consulting.
+					</p>
+					<h2>Contact Information</h2>
+					A.K Brohi Road<br>
+					Sector H-11/4<br>
+					Tel: (051) 111 128 128 or (051) 831 4100 - 03<br>
+					Fax: (051) 410 3846<br>
+					
+					<a href="geo:33.6568352,73.0173273?q=National+University+of+Computer+%26+Emerging+Sciences"><img src="maps/islamabad.png" alt="image" height="100%" width="100%"/></a> click to see map
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<h4>Copyright © 2000 - 2015 , NUCES. 
+				<br>All Rights Reserved.</h4>
+			</div>
+	    </div>
+
+		<div data-role="page" id="kchPage">
+		
+			<div data-role="header" data-position="fixed" >
+				<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+				<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+				<a href="#campusPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+			</div>
+			
+			<div data-role="content">
+					<h1>Karachi Campus</h1>
+					<p>
+					The Main Campus is located on a six acre site in Shah Latif Town on the National Highway, ten kilometres east of Karachi airport. The campus comprises spacious and fully air conditioned, purpose built classrooms, laboratories, auditorium, seminar rooms, and a spacious Library. The Engineering labs comprise Electronics, Electrical, Control Engineering, Signal Processing, Telecommunications, Networking, Multimedia and Computer Labs. The Computing Labs have latest computers and workstations having Linux and Windows-based environments. The campus is fully networked and it also provides wireless hotspots.<br>
+					A separate Student Activities block includes Cafeteria, Sports Complex for indoor games and a Gymnasium with all modern equipments. In addition to a Mosque, playgrounds for Cricket, Hockey, Football, Basketball, Badminton, Volleyball and Tennis courts are also available.
+					</p>
+					<h2>Contact Information</h2>
+					<h3>City Campus (Admission Cell)</h3>
+					22-G, Block-6,<br>
+					PECHS, Karachi<br>
+					Tel: (021) 439 0941-5<br>
+					<h3>Main Campus</h3>
+					Shah Latif Town (On National Highway),<br>
+					Karachi.<br>
+					Tel: (021) 111 128 128<br>
+					Fax: (021) 410 0549<br>
+					<a href="geo:24.8629907,67.2316662?q=FAST+-+National+University+of+Computer+%26+Emerging+Sciences"><img src="maps/karachi.png" alt="image" height="100%" width="100%"/></a> click to see map
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<h4>Copyright © 2000 - 2015 , NUCES. 
+				<br>All Rights Reserved.</h4>
+			</div>
+	    </div>
+
+
+		<div data-role="page" id="lhrPage">
+		
+			<div data-role="header" data-position="fixed" >
+				<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+				<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+				<a href="#campusPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+			</div>
+			
+			<div data-role="content">	
+					<h1>Lahore Campus</h1>
+					<p>
+					The Lahore Campus, spread over 12.5 acres, is located in Faisal Town which is the heart of greater Lahore. The campus consists of three blocks, which with their striking exterior brickwork and magnificent marble domes are a valuable addition to the rich architectural heritage of Lahore. The facilities consist of fully air-conditioned purpose built class rooms equipped with teaching aids, and a number of computing and engineering laboratories.<br>
+					The computing labs consist of database, programming, software engineering, and computer application labs. Latest computers, workstations and services having LINUX and Windows based environments are also readily available for the usage of students. The whole campus is fully equipped with fast Local Area Network and latest wireless hotspots.
+					</p>
+					<h2>Contact Information</h2>
+					Block-B, Faisal Town,<br>
+					Lahore.<br>
+					Tel: (042) 111 128 128<br>
+					Fax: (042)516 5232<br>
+					<a href="geo:31.481093,74.303388?q=National+University+of+Computer+and+Emerging+Sciences"><img src="maps/lahore.png" alt="image" height="100%" width="100%"/></a> click to see map
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<h4>Copyright © 2000 - 2015 , NUCES. 
+				<br>All Rights Reserved.</h4>
+			</div>
+	    </div>
+
+		<div data-role="page" id="pwrPage">
+		
+			<div data-role="header" data-position="fixed" >
+				<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+				<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+				<a href="#campusPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+			</div>
+			
+			<div data-role="content">
+				<h1>Peshawar Campus</h1>
+				<p>
+				The Peshawar campus was established in 2001. It is housed in an impressive building, which has an architectural design similar to that of the Lahore and Karachi campuses. The green, well maintained lawns that surround the building add to the scenic beauty of the whole setup. The Campus covers an area of 4 acres and is located in the Industrial Estate, Hayatabad. The satellite town of Hayatabad flanks it, which is an ideal place for students to find residence in privately run hostels. The historic Khyber Pass is within an hours drive from the Campus.<br>
+				The Campus has all the physical facilities that a modern educational institution should have. It has an excellent Intranet facility with a site for the students to inform them about their class attendance, grades and other academic information. The campus has fully air-conditioned, multi-media installed classrooms and lecture theatres, a hall, a library and Computer/ Engineering laboratories that have latest equipment. The library has a collection of over 6,000 books and subscribes to 35 journals, magazines and newspapers. It has computers for students to do online searches for study materials. It also has the distinction of being one of the first libraries in the province to be computerized.
+				</p>
+				<h2>Contact Information</h2>
+				160 Industrial Estate,<br>
+				Jamrud Road,<br>
+				Peshawar.<br>
+				Tel: (091) 111 128 128<br>
+				Fax: (091) 582 2320<br>			
+				<a href="geo:33.9833519,71.4003824?q=Fast+University+Peshawar+Campus"><img src="maps/peshawar.png" alt="image" height="100%" width="100%"/></a> click to see map
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<h4>Copyright © 2000 - 2015 , NUCES. 
+				<br>All Rights Reserved.</h4>
+			</div>
+	    </div>
+
+		<div data-role="page" id="cfPage">
+		
+			<div data-role="header" data-position="fixed" >
+				<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+				<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+				<a href="#campusPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+			</div>
+			
+			<div data-role="content">	
+				<h1>Chaniot/Faisalabad Campus</h1>
+				<p>
+				Situated at the junction of Pakistan’s industrial hub—Faisalabad and the historically rich city of Chiniot in suburbs of River Chenab, the Chiniot - Faisalabad campus is the 5th campus of the university. The campus symbolises the desirable connect between nature and industry and between tradition and modernity. Its picturesque surroundings in the outskirts of Pakistan’s Manchester, the home to textile industry, represent human advancement from agrarian to industrial and technological society. The campus is located on 10 acres of land on Faisalabad Chiniot Road (about 9 Km’s from Faisalabad Motorway interchange - towards Chiniot).<br>
+				The Campus has been established to carry forward the academic traditions of excellence in professional and personal aspects of the students. The aim is follow the footsteps of the alumnae of the 4 sister campuses in Islamabad, Lahore, Karachi, and Peshawar. Graduates of all sister campuses of this university are well-received by the industry and hold prominent positions in many national and multinational corporations. A large number of university alumni are serving in prestigious institutions and organizations across the world like Microsoft, YouTube, Oracle, NCR, LMKR, IBM any many more. The physical proximity of the Campus with some of the leading industrial enterprises will go a long way in furthering the cause of professional education in the country.<br>
+				The campus offers degree programs in Computer Science, Electrical Engineering, and Business Administration. To confer academic excellence on its graduates, the campus has scholarly, seasoned, dedicated and professionally stimulated faculty.
+				</p>
+				
+				<h2>Contact Information</h2>
+				Loonaywala Stop (9 Km from Motorway Interchange)<br>
+				Faisalabad-Chiniot Road<br>
+				Tel: (041) 111-128-128<br>
+				Fax: (041) 260 7272<br>
+				<a href="geo:31.7245117,72.982006?q=National+University+of+Computer+and+Emerging+Sciences+Faisalabad-Chiniot+Campus"><img src="maps/chaniotfaisalabad.png" alt="image" height="100%" width="100%"/></a> click to see map
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<h4>Copyright © 2000 - 2015 , NUCES. 
+				<br>All Rights Reserved.</h4>
+			</div>
+	    </div>
+
+
+
+
+
+
+<div data-role="page" id="departmentPage">
+	<div data-role="header" data-position="fixed" >
+		<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+		<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+		<a href="#mainPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+	</div>
+	
+	<div data-role="content">	
+		<h2>Departments</h2>
+		<ul data-role="listview">
+		<li><a href="#computerScience">Computer Science</a></li>
+		<li><a href="#electricalEngineering">Electrical Engineering</a></li>
+		<li><a href="#fsm">Fast School of Management</a></li>
+		<li><a href="#mathematics">Matematics</a></li>
+		<li><a href="#civil">Civil Engineering</a></li>
+		</ul>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>Copyright © 2000 - 2015 , NUCES. 
+		<br>All Rights Reserved.</h4>
+	</div>
+</div>
+
+<div data-role="page" id="computerScience">
+	<div data-role="header" data-position="fixed" >
+		<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+		<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+		<a href="#departmentPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+	</div>
+	
+	<div data-role="content">	
+		<h2>Computer Science</h2>
+		<div data-role="collapsible">
+		<h2>BS(CS)</h2>
+			<p>
+			The purpose of Computer Science degree programs is to produce computer scientists, who can form the backbone of the rapidly growing computer industry. The BS program is focused on developing an in depth understanding of both the theoretical and practical aspects of computer science through a rigorous course work spanning over a period of four years. Students are given unique opportunities to go beyond traditional computer science and get themselves involved in research activities through various research and industrial collaboration programs carried out at the campuses. This ensures a broad based educational foundation that prepares them for leadership roles along diverse career paths.
+			To equip students with modern trends in the ever changing field of computer science, courses are offered in concentration areas of Semantic Web, Multi-Agent Intelligent Systems, Networks, Data Mining and Data Warehousing, Software Engineering and Quality Assurance, Graphics and Game Programming, Image Processing, Soft Computing, Corporate and Business Computing, E-commerce etc. Students select courses from these areas to match with their future career options in a broad range of industrial, corporate, multinational, governmental and non-governmental organizations. Our courseware is tailored according to the international standards to nurture capacity building and original thinking in our graduates for life-long-learning. No doubt that our graduates are highly sought after by a majority of national and international IT industry.
+			<h2>Career Opportunities</h2>
+			Your career prospects will be excellent: You may become a software engineer, programmer, web developer, games programmer or computer graphic designer.
+			<h2>Award of Degree</h2>
+			For the award of BS (Computer Science) degree, a student must have:
+			Passed courses totalling at least 130 credit hours, including all those courses which have been specified as Core courses.
+			Obtained a CGPA of at least 2.00
+			</p>
+		</div>
+		<div data-role="collapsible">
+		<h2>MS(CS)</h2>
+			<p>
+				The MS (Computer Science) comprises course work and research component. It has four ‘core courses’ aimed at strengthening the understanding and competence in computer science fundamentals. The University expects its MS graduates to pursue careers either as ‘Computer Science Faculty Members’ or as ‘Software Development Managers’ in the industry.
+				<h2>No fee will be charged for studying deficiency courses.</h2>
+				A student cannot take MS courses unless all specified deficiency courses have been passed. Typical course load in a semester is four courses. However, NUCES staff cannot register for more than two courses in a semester.<br>
+				A student has the option to pursue MS by undertaking either a 6 credit hour MS Thesis or MS Project, spread over two regular semesters.
+				<h2>Award of Degree</h2>
+				For the award of MS degree, a student must have:<br>
+				Passed courses totalling at least 31 credit hours, including all those courses which have been specified as Core courses<br>
+				Obtained a CGPA of at least 2.5<br>
+			</p>
+		</div>
+		<div data-role="collapsible">
+		<h2>Phd(CS)</h2>
+		<p>
+			The PhD program requires candidates to undertake a number of graduate level courses, pass a qualifying examination, and then carry out research in a chosen area. The candidates are required to publish research papers in journals of international repute.
+			<h2>PhD Coursework</h2>
+			The PhD coursework is 6 courses (total 18 credit hours). A non-credit course “Academic Writing” must also be passed.
+			<h2>Comprehensive Examination</h2>
+			The student becomes eligible to appear in the Comprehensive Examination after passing the PhD coursework with a minimum CGPA of 3.0.
+			<h2>Research Work</h2>
+			The student can start work on PhD thesis only after<br>
+			Passing the Comprehensive Exam, AND<br>
+			Acceptance of synopsis by the Graduate Studies Committee.
+			<h2>PhD Dissertation</h2>
+			The PhD Dissertation must contain original research work.
+			<h2>Plagiarism Test</h2>
+			The Plagiarism Test shall be conducted on the Dissertation before its submission to foreign experts.
+			<h2>Foreign Expert Evaluation</h2>
+			The PhD Dissertation shall be evaluated by at least two PhD experts from technologically/academically advanced foreign countries in addition to local Committee members.
+			<h2>Open Defence</h2>
+			After receiving positive evaluation from the two foreign experts, the student will defend his/her work before a local Committee. The student will be declared successful after the local Committee approves the work.
+			<h2>Research Paper</h2>
+			Acceptance/publication of at least one research paper in an HEC approved “X” category journal is a requirement for the award of PhD degree.
+		</p>
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>Copyright © 2000 - 2015 , NUCES. 
+		<br>All Rights Reserved.</h4>
+	</div>
+</div>
+
+<div data-role="page" id="electricalEngineering">
+	<div data-role="header" data-position="fixed" >
+		<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+		<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+		<a href="#departmentPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+	</div>
+	
+	<div data-role="content">	
+		<h2>Electrical Engineering</h2>
+		<div data-role="collapsible">
+		<h2>BS(EE)</h2>
+		<p>
+		The Electrical Engineering degree is based on the HEC/PEC approved curriculum. In the first year the students learn the fundamentals of Electrical Engineering supported by essential mathematics and physics courses. These courses are followed by breadth courses which introduce students to different specialties in Electrical Engineering. In the senior year students choose a specialization stream and study advanced courses. Currently specializations are being offered in three areas, Telecommunication Engineering, and Computer Engineering. In the highly competitive job market a young engineer is not only required to be knowledgeable in technical areas but is also expected to have excellent communication and managerial skills and an appreciation of modern day economics to design and implement a cost effective engineering solution. Students are offered courses in communication skills, engineering management and economics to prepare them for challenging environments. Social Science electives and courses in Professional Ethics contribute in enhancing the soft skills and help prepare a well rounded personality. The course work is supported by state of the art engineering labs. During four years, students work in twelve different labs where they perform experiments using state of the art instruments, equipment and simulation software.<br>
+		The offered specialization streams are :<br>
+		Telecommunication Engineering<br>
+		Computer Engineering<br>
+		Electronics<br>
+		<h2>Career Opportunities</h2>
+		This versatile degree opens careers in different areas of electrical engineering. You could specialize in telecom or computer engineering. You could pursue a career in telecom industry, in embedded system design, or as a software programmer.
+		<h2>Award of Degree</h2>
+		For the award of BS (Electrical Engineering) degree, a student must have:<br>
+		Passed courses totalling at least 136 credit hours, including all those courses which have been specified as Core courses.<br>
+		Obtained a CGPA of at least 2.00<br>
+		</p>
+		</div>
+		<div data-role="collapsible">
+		<h2>MS(EE)</h2>
+		<p>
+			This program prepares a graduate in Electrical Engineering to acquire expertise in a particular area. In the final year, the student normally undertakes a thesis. This may be undertaken in collaboration with the industry, under the guidance of industry experts and a faculty supervisor from the University.
+			A student has the option to pursue MS by undertaking either a 6 credit hour MS Thesis or MS Project, spread over two regular semesters.
+			Typical course load in a semester is four courses. However, NUCES staff cannot register for more than two courses in a semester.
+			<h2>Award of Degree</h2>
+			For the award of MS degree, a student must have:<br>
+			Passed courses totalling at least 31 credit hours, including all those courses which have been specified as Core courses<br>
+			Obtained a CGPA of at least 2.5<br>
+		</p>
+		</div>
+		<div data-role="collapsible">
+		<h2>Phd(EE)</h2>
+		<p>
+			The PhD program requires candidates to undertake a number of graduate level courses, pass a qualifying examination, and then carry out research in a chosen area. The candidates are required to publish research papers in journals of international repute.
+			<h2>PhD Coursework</h2>
+			The PhD coursework is 6 courses (total 18 credit hours). A non-credit course “Academic Writing” must also be passed.
+			<h2>Comprehensive Examination</h2>
+			The student becomes eligible to appear in the Comprehensive Examination after passing the PhD coursework with a minimum CGPA of 3.0.
+			<h2>Research Work</h2>
+			The student can start work on PhD thesis only after<br>
+			Passing the Comprehensive Exam, AND<br>
+			Acceptance of synopsis by the Graduate Studies Committee.<br>
+			<h2>PhD Dissertation</h2>
+			The PhD Dissertation must contain original research work.
+			<h2>Plagiarism Test</h2>
+			The Plagiarism Test shall be conducted on the Dissertation before its submission to foreign experts.
+			<h2>Foreign Expert Evaluation</h2>
+			The PhD Dissertation shall be evaluated by at least two PhD experts from technologically/academically advanced foreign countries in addition to local Committee members.
+			<h2>Open Defence</h2>
+			After receiving positive evaluation from the two foreign experts, the student will defend his/her work before a local Committee. The student will be declared successful after the local Committee approves the work.
+			<h2>Research Paper</h2>
+			Acceptance/publication of at least one research paper in an HEC approved “X” category journal is a requirement for the award of PhD degree.
+		</p>
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>Copyright © 2000 - 2015 , NUCES. 
+		<br>All Rights Reserved.</h4>
+	</div>
+</div>
+
+<div data-role="page" id="fsm">
+	<div data-role="header" data-position="fixed" >
+		<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+		<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+		<a href="#departmentPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+	</div>
+	
+	<div data-role="content">	
+		<h2>School of Management</h2>
+		<div data-role="collapsible">
+		<h2>BS(BA)</h2>
+		<p>
+			Change is the only constant known today to the business world which has to grapple with the challenging realities of an increasingly global and complex marketplace. The Bachelor of Business Administration (BBA) program at FAST attempts to bring out dynamic managers and administrators, well-equipped to meet the challenges posed by this highly competitive global marketplace. To this end, the approach in the classroom is tailored to inculcate an appreciation for both the quantitative and qualitative dimensions of business. Quantitative skills developed through such areas as accounting, statistics, financial modelling and linear programming are combined with qualitative skills in communication, human psychology, marketing and organizational behaviour. Using these diverse skills and tools, BBA graduates are expected to be able to provide timely solutions to real-world business problems – solutions that are cost-effective, efficient and ethically correct.
+			<h2>Career Opportunities</h2>
+			Business Administration graduates can pursue careers in a wide range of business settings and are found in all types of organizations including industrial, commercial and financial as well as in the public sector. Many have the wide range of skills required to develop their own business or support a family business
+			<h2>Award of Degree</h2>
+			For the award of BBA degree, a student must have:<br>
+			Passed courses totalling at least 130 credit hours<br>
+			Obtained a CGPA of at least 2.00<br>
+		</p>
+		</div>
+		<div data-role="collapsible">
+		<h2>BS(AF)</h2>
+		<p>
+			Accounting & Finance are the most significant and critical areas in the system of free enterprise. Good financial management is, therefore, vitally important to the economic health of business organizations. However, the constant shifts in economic conditions, intense competition for financial resources and questionable business practices have made financial management a complex and challenging undertaking. The BS Accounting & Finance program is designed to prepare students to meet the challenges posed by this complex but exciting area that has assumed much greater importance in the wake of the recent financial crisis in the world. This crisis has taught us that prudent financial management could mean the difference between a successful and an unsuccessful business enterprise. BS Accounting & Finance at FAST is tailored to first impart a broad-based education in the fundamentals of business and management and then develop the quantitative and analytical skills necessary to become prudent, astute and ethical financial managers.
+			<h2>Career Opportunities</h2>
+			There are a number of pathways to choose from including audit, taxation, budget analysis, financial accounting and management accounting.
+			<h2>Award of Degree</h2>
+			For the award of BS (Accounting & Finance) degree, a student must have:<br>
+			Passed courses totalling at least 130 credit hours<br>
+			Obtained a CGPA of at least 2.00<br>
+		</p>
+		</div>
+		<div data-role="collapsible">
+		<h2>MBA (1.5 years)</h2>
+		<p>
+			<p>
+				This 1½-year Master of Business Administration (MBA) program is offered to those who have already completed the 4-year BBA program at FAST. This MBA program is designed to further hone the skills of graduates of the BBA program and it achieves this by focusing on the more strategic, specialized and advanced courses across the functional areas of business. Additionally, this intellectually-stimulating program is designed with a view to 'researching' local & regional management phenomena rather than merely 'studying' them. Students are taught decision-making skills through qualitative and quantitative analysis and are expected to offer vibrancy to the corporate culture. MBA at FAST is intended to produce managers and business administrators who are ready to face multi-dimensional and complex real-life business problems and who can provide effective and efficient solutions to such problems.
+				<h2>Award of Degree</h2>
+				For the award of MBA degree, a student must have:
+				Passed courses totalling at least 30 credit hours, including all those courses which have been specified as Core courses
+				Obtained a CGPA of at least 2.5
+			</p>
+		</p>
+		</div>
+		<div data-role="collapsible">
+		<h2>MBA (2 years)</h2>
+		<p>
+			This 2-year Master of Business Administration (MBA) program focuses on strategic, specialized and advanced courses across the functional areas of business. Additionally, this intellectually-stimulating program is designed with a view to 'researching' local & regional management phenomena rather than merely 'studying' them. Students are taught decision-making skills through qualitative and quantitative analysis and are expected to offer vibrancy to the corporate culture. This program is intended to produce managers and business administrators who are ready to face multi-dimensional and complex real-life business problems and who can provide effective and efficient solutions to such problems.
+			<h2>Award of Degree</h2>
+			Passed courses totalling at least 60 credit hours, including all those courses which have been specified as Core courses<br>
+			Obtained a CGPA of at least 2.5<br>
+		</p>
+		</div>
+		<div data-role="collapsible">
+		<h2>Phd Management Sciences</h2>
+		<p>
+			<h2>Program Overview</h2>
+			The PhD program provides high quality management education to business scholars i.e. to discover and impart culturally and globally relevant knowledge in management sciences. The program is designed to discover management scholarship which is intellectually rigorous, morally intensive, socially integrative, culturally relevant and globally acknowledged. PhD scholars will be encouraged to carry out original work through research which connects strongly with resolving local, national and global challenges of significance. PhD in Management is offered at Islamabad at Lahore Campus.<br>
+			<h3>The Islamabad Campus is currently offering PhD in the following areas of specialization:</h3>
+			<ul>Management<br>
+			Finance<br>
+			Human Resource Management<br>
+			Technology Management<br></ul>
+			<h2>Eligibility</h2>
+			A Master’s degree in a relevant subject, earned from a recognized university after a minimum of 17.5 years of education with CGPA of at least 3.0/4.0 or equiva lent.<br>
+			A minimum of 60% marks and at least 50 percentile rank in the relevant NTS subject test. The NTS GAT-Subject Score should be valid at the time of admission.<br>
+			<h2>Selection Criteria</h2>
+			Admission is based on a candidate’s performance in the following:<br>
+			Performance in International GMAT or an equivalent test as per HEC rule<br>
+			Interview and assessment by the Doctoral Admissions Committee (FSM DAC)<br>
+			Submission of Research Proposal (for the purpose of evaluation)<br>
+			<h2>Scheme of Study</h2>
+			The PhD program requires candidates to take six graduate level courses (18 Cr. hrs.). There are four core courses, listed below. The remaining two can be taken from graduate level courses in the Faculty of Management Sciences or from the specialization electives for PhDs with the recommendation of the supervisor. On completion of the coursework, students are required to pass a qualifying comprehensive examination, defend their research proposal and then carry out research in the chosen area. The candidates are also required to publish research papers in journals of international repute, as per prevalent requirements.
+		</p>
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>Copyright © 2000 - 2015 , NUCES. 
+		<br>All Rights Reserved.</h4>
+	</div>
+</div>
+
+<div data-role="page" id="mathematics">
+	<div data-role="header" data-position="fixed" >
+		<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+		<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+		<a href="#departmentPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+	</div>
+	
+	<div data-role="content">	
+		<h2>Methamatics</h2>
+		<div data-role="collapsible">
+		<h2>MS Mathematics</h2>
+		<p>
+			This program enables students to develop skills necessary to manage software projects. In the final year, students take a Practicum course, which involves supervision of undergraduate students’ projects. In the final semester, the student either undertakes a Research/Industry survey or Thesis along with the second part of the Practicum course.
+			The MS (Software Project Management) program focuses on strengthening students’ knowledge in theoretical as well as practical aspects of managing software projects. The program not only addresses management issues related to software industry but also covers the software engineering concepts, which must be known to a project manager.
+			The aim is to prepare middle and top management so that they meet the challenges of present and future needs of software industry. The coursework exposes the students to management and technical issues encountered in development of software solutions. The students are expected to do research for their theses.
+			Typical course load in a semester is four courses. However, NUCES staff cannot register for more than two courses in a semester.
+			<h2>Award of Degree</h2>
+			For the award of MS degree, a student must have:<br>
+			Passed courses totalling at least 31 credit hours, including all those courses which have been specified as Core courses<br>
+			Obtained a CGPA of at least 2.5<br>
+		</p>
+		</div>
+		<div data-role="collapsible">
+		<h2>Phd Mathematics</h2>
+		<p>
+			The PhD program requires candidates to undertake a number of graduate level courses, pass a qualifying examination, and then carry out research in a chosen area. The candidates are required to publish research papers in journals of international repute.
+			<h2>PhD Coursework</h2>
+			The PhD coursework is 6 courses (total 18 credit hours). A non-credit course “Academic Writing” must also be passed.
+			<h2>Comprehensive Examination</h2>
+			The student becomes eligible to appear in the Comprehensive Examination after passing the PhD coursework with a minimum CGPA of 3.0.
+			<h2>Research Work</h2>
+			The student can start work on PhD thesis only after<br>
+			<ul>Passing the Comprehensive Exam, AND<br>
+			Acceptance of synopsis by the Graduate Studies Committee.<br></ul>
+			<h2>PhD Dissertation</h2>
+			The PhD Dissertation must contain original research work.
+			<h2>Plagiarism Test</h2>
+			The Plagiarism Test shall be conducted on the Dissertation before its submission to foreign experts.
+			Foreign Expert Evaluation</h2>
+			The PhD Dissertation shall be evaluated by at least two PhD experts from technologically/academically advanced foreign countries in addition to local Committee members.
+			<h2>Open Defence</h2>
+			After receiving positive evaluation from the two foreign experts, the student will defend his/her work before a local Committee. The student will be declared successful after the local Committee approves the work.
+			<h2>Research Paper</h2>
+			Acceptance/publication of at least one research paper in an HEC approved “X” category journal is a requirement for the award of PhD degree
+		</p>
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>Copyright © 2000 - 2015 , NUCES. 
+		<br>All Rights Reserved.</h4>
+	</div>
+</div>
+
+<div data-role="page" id="civil">
+	<div data-role="header" data-position="fixed" >
+		<img src = "logo1.png" alt="logo" style="float:left;display:inline" border="0" width="50" height = "50"/>
+		<h1 style="text-align:left; margin-left:10px;"> <font size="5">FAST Insider</font> </h1>
+		<a href="#departmentPage" class="ui-btn ui-btn-right ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+	</div>
+	
+	<div data-role="content">	
+		<h2>Civil Engineering</h2>
+		<div data-role="collapsible">
+		<h2>BS Civil Engineering</h2>
+		<p>
+			The Civil Engineering degree is based on the HEC/PEC approved curriculum. In the first year the students learn the fundamentals of Civil Engineering supported by essential mathematics and physics courses. These courses are followed by breadth courses which introduce students to different aspects of Civil Engineering. In the senior year students choose a specialization stream and study advanced courses. In the highly competitive job market a graduate engineer is not only required to be knowledgeable in technical areas but is also expected to have excellent communication skills and an appreciation of cost effective engineering solutions. Students are offered courses in communication skills to prepare them for challenging environments. Courses like Professional Ethics contribute towards enhancing soft skills that help prepare a well rounded personality.
+			<h2>Career Opportunities</h2>
+			This degree program opens careers in different areas of Civil engineering.
+			<h2>Award of Degree</h2>
+			For the award of BS (Civil Engineering) degree, a student must have:<br>
+			Passed courses totalling at least 136 credit hours, including all those courses which have been specified as Core courses.<br>
+			Obtained a CGPA of at least 2.00<br>
+		</p>
+		</div>
+		<div data-role="collapsible">
+		<h2>MS Civil Engineering</h2>
+		<p>
+			To produce structural engineers with essential knowledge base and training; having a sound understanding of advanced concepts to undertake complex engineering problems. This program allows two options to the students; MS with thesis and without thesis. MS with thesis is for students who wish to study a particular research area in greater depth, whereas MS without thesis is for those who want to enter or return to professional practice.
+			<h2>Award of Degree</h2>
+			Passed courses totalling at least 31 credit hours, including all those courses which have been specified as Core courses<br>
+			Obtained a CGPA of at least 2.5<br>
+		</p>
+		</div>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>Copyright © 2000 - 2015 , NUCES. 
+		<br>All Rights Reserved.</h4>
+	</div>
+</div>
+
+</body>
+</html>
