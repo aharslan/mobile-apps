@@ -35,7 +35,7 @@
 <script type="text/javascript" src="scripts/custom.js"></script>
 </head>
 
-<body class="left-sidebar"> 
+<body class="dual-sidebar"> 
 
 <div id="preloader">
 	<div id="status">
@@ -83,9 +83,9 @@
                         <a class="submenu-item" href="features-jquery.html">        <i class="fa fa-angle-right"></i><em>   jQuery    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="features-others.html">        <i class="fa fa-angle-right"></i><em>   Others    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="features-sliders.html">       <i class="fa fa-angle-right"></i><em>   Sliders    </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="features-interactive.html">   <i class="fa fa-angle-right"></i><em>   Interactive    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="features-interactive.html">   <i class="fa fa-angle-right"></i><em>   Interactive    </em><i class="fa fa-circle"></i></a>                    
                     </div>
-                </div>                 
+                </div>                  
                 <div class="has-submenu">
                     <a class="menu-item show-submenu" href="#">
                         <i class="fa fa-navicon"></i>
@@ -168,8 +168,8 @@
                     <i class="fa fa-youtube-play"></i>
                     <em>Videos</em>
                     <i class="fa fa-circle"></i>
-                </a>                     
-                <a class="menu-item" href="page-blog.html">
+                </a>                    
+                <a class="menu-item menu-item-active" href="page-blog.html">
                     <i class="fa fa-pencil"></i>
                     <em>Blog</em>
                     <i class="fa fa-circle"></i>
@@ -262,6 +262,42 @@
                     <em>YouTube</em>
                 </a>    
             </div>
+                        
+            <p class="sidebar-divider">Send an email</p>
+            
+            <div class="container no-bottom">
+                <div class="sidebar-form contact-form no-bottom"> 
+                    
+                    <em>
+                        Your message is important to us and we reply to all of them in less than 48 hours.
+                    </em>
+                    
+                    <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                        Awesome! We'll get back to you!
+                    </div>
+
+                    <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                        <fieldset>
+                            <div class="formValidationError" id="contactNameFieldError">Name is required!</div>             
+                            <div class="formValidationError" id="contactEmailFieldError">Mail address required!</div> 
+                            <div class="formValidationError" id="contactEmailFieldError2">Mail address must be valid!</div> 
+                            <div class="formValidationError" id="contactMessageTextareaError">Message field is empty!</div>   
+                            <div class="formFieldWrap">
+                                <input onfocus="if (this.value=='Name') this.value = ''" onblur="if (this.value=='') this.value = 'Name'" type="text" name="contactNameField" value="Name" class="contactField requiredField" id="contactNameField"/>
+                            </div>
+                            <div class="formFieldWrap">
+                                <input onfocus="if (this.value=='Email') this.value = ''" onblur="if (this.value=='') this.value = 'Email'" type="text" name="contactEmailField" value="Email" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                            </div>
+                            <div class="formTextareaWrap">
+                                <textarea onfocus="if (this.value=='Message') this.value = ''" onblur="if (this.value=='') this.value = 'Message'" name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea">Message</textarea>
+                            </div>
+                            <div class="formSubmitButtonErrorsWrap">
+                                <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="SUBMIT" data-formId="contactForm"/>
+                            </div>
+                        </fieldset>
+                    </form>       
+                </div>
+            </div>
             
             <p class="sidebar-divider">Contact Us</p>
             
@@ -288,86 +324,255 @@
         
         <div id="content" class="snap-content">
             <div class="content">
-            <div class="header-clear"></div>
+            <div class="header-clear-large"></div>
             <!--Page content goes here, fixed elements go above the all elements class-->  
                 
-                 <div class="container-fullscreen">
-                    <iframe class="responsive-image maps" src="https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed"></iframe>
+                <div class="heading-style-1 container half-bottom">
+                    <a href="#"><i class="fa fa-check-square-o"></i></a>
+                    <h4>Blog Template</h4>
+                    <div class="heading-block bg-red-dark"></div>
+                    <div class="heading-decoration bg-red-dark"></div>
+                </div>
+                <div class="container">
+                    <p>
+                        A blog template means this page is just a dummy, but in case you decide
+                        to add posts manually or connect it to a CMS, we got you covered!
+                    </p>
                 </div>
                 
-                <div class="one-half-responsive">
-                    <h4>Send us an email!</h4>
-                    <p>Use the form to send us a message, it's AJAX and PHP powered and it's easy to use!</p>
-                    <div class="container no-bottom">
-                        <div class="contact-form no-bottom"> 
-                            <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
-                                <div class="big-notification green-notification">
-                                    <h3 class="uppercase">Message Sent </h3>
-                                    <a href="#" class="close-big-notification">x</a>
-                                    <p>Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thank you!</p>
+                <div class="decoration"></div>
+                
+                <div class="page-blog">
+                    <!-- POST 1-->
+                    <div class="page-blog-list">
+                        <img src="images/pictures/3w.jpg" alt="img" class="responsive-image">
+                        <h3 class="page-blog-title">Mobile Blog</h3>
+                        <strong class="page-blog-tags">In: <a href="#">Web Design, Mobile Templates, Blog</a></strong>
+                        <div class="page-blog-content">
+
+                            <p class="dropcaps-1">
+                                Aorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius dui et erat aliquet rutrum. Nunc vitae tincidunt magna. In vitae efficitur enim. Fusce a augue mi. Vivamus a nunc in ante semper iaculis
+                            </p>   
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec lectus vitae 
+                                metus vehicula cursus. Donec purus ex, ultricies vel iaculis sed, consectetur 
+                                venenatis sapien. Quisque auctor justo libero, vel aliquam odio consequat quis. 
+                                Nunc accumsan efficitur felis eu egestas.
+                            </p>
+                            
+                            <div class="one-half">
+                                <h5>1/2</h5>
+                                <img class="preload-image responsive-image half-bottom" data-original="images/pictures/1w.jpg">
+                                <p>
+                                    This column is half the size of the screen, and will stay this way on mobile and tablets.
+                                </p>
+                            </div>
+                            <div class="one-half last-column">
+                                <h5>2/2</h5>
+                                <img class="preload-image responsive-image half-bottom" data-original="images/pictures/2w.jpg">
+                                <p>
+                                    This column is half the size of the screen, and will stay this way on mobile and tablets.
+                                </p>
+                            </div>
+                            <div class="clear"></div>
+                            
+                            <div class="quote-5 container">
+                                <p>
+                                    This is the classic , standard blockquote design, that everyone uses
+                                    and it's fantasticly easy to use. Just a class, and an author!
+                                </p>
+                                <strong>Enabled | ThemeForest</strong>
+                            </div>
+                          
+                            <div class="decoration"></div>
+                            
+                            <div class="container">
+                                <h5>Share the Fun!</h5>
+                                <p>Sharing is caring, and sharing is easy! We made it easy!</p>
+                                <a class="social-ball facebook-color"  href="#"><i class="fa fa-facebook"></i></a>
+                                <a class="social-ball twitter-color"   href="#"><i class="fa fa-twitter"></i></a>
+                                <a class="social-ball google-color"    href="#"><i class="fa fa-google-plus"></i></a>
+                                <a class="social-ball pinterest-color" href="#"><i class="fa fa-pinterest"></i></a>
+                                <a class="social-ball sms-color"       href="#"><i class="fa fa-comment-o"></i></a>
+                                <a class="social-ball mail-color"      href="#"><i class="fa fa-envelope-o"></i></a>
+                            </div>
+                            
+                            <div class="decoration"></div>
+                            
+                            <div class="blog-post-comments full-bottom">
+                                <h5>Join the talk</h5>
+                                <p>
+                                    Remeber.This is a template! Not connected! These are just 
+                                    samples of code. Conversion to CMS is not included.
+                                </p>
+                                <div class="decoration"></div>
+                                <div class="blog-post-comment">
+                                    <em>July 25, 2014</em>
+                                    <a href="#" class="blog-post-comment-reply">Reply</a>
+                                    <strong>Alexander Doe</strong>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut nulla ac est finibus euismod. 
+                                        Vestibulum fermentum, augue vel fermentum placerat, ipsum tortor condimentum justo, vitae vestibulum nulla elit eu sem.
+                                    </p>
+                                </div>
+                                <div class="blog-post-comment blog-post-comment-nested">
+                                    <em>July 25, 2014</em>
+                                    <a href="#" class="blog-post-comment-reply">Reply</a>
+                                    <strong>John Doe</strong>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut nulla ac est finibus euismod. 
+                                        Vestibulum fermentum, augue vel fermentum placerat, ipsum tortor condimentum justo, vitae vestibulum nulla elit eu sem.
+                                    </p>
+                                </div>            
+                                <div class="decoration"></div>
+
+                                <div class="blog-post-comment-add">
+                                    <h5>Leave a comment</h5>
+                                    <p>
+                                        Remeber.This is a template! Not connected! These are just 
+                                        samples of code. Conversion to CMS is not included.
+                                    </p>
+                                    <strong>Name</strong>
+                                    <em>required</em>
+                                    <input type="text" value="Your Name">                                    
+                                    <strong>Email</strong>
+                                    <em>required</em>
+                                    <input type="text" value="Your Email">                                    
+                                    <strong>Message</strong>
+                                    <em>required</em>
+                                    <textarea cols="30" rows="3">Your Message</textarea>
                                 </div>
                             </div>
-
-                            <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
-                                <fieldset>
-                                    <div class="formValidationError bg-red-dark color-white" id="contactNameFieldError">
-                                        <p class="center-text uppercase small-text">Name is required!</p>
-                                    </div>             
-                                    <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError">
-                                        <p class="center-text uppercase small-text">Mail address required!</p>
-                                    </div> 
-                                    <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError2">
-                                        <p class="center-text uppercase small-text">Mail address must be valid!</p>
-                                    </div> 
-                                    <div class="formValidationError bg-red-dark color-white" id="contactMessageTextareaError">
-                                        <p class="center-text uppercase small-text">Message field is empty!</p>
-                                    </div>   
-                                    <div class="formFieldWrap">
-                                        <label class="field-title contactNameField" for="contactNameField">Name:<span>(required)</span></label>
-                                        <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
-                                    </div>
-                                    <div class="formFieldWrap">
-                                        <label class="field-title contactEmailField" for="contactEmailField">Email: <span>(required)</span></label>
-                                        <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
-                                    </div>
-                                    <div class="formTextareaWrap">
-                                        <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: <span>(required)</span></label>
-                                        <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
-                                    </div>
-                                    <div class="formSubmitButtonErrorsWrap">
-                                        <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="SUBMIT" data-formId="contactForm"/>
-                                    </div>
-                                </fieldset>
-                            </form>       
+                            
                         </div>
                     </div>
+                    <div class="decoration hide-if-mobile"></div>
                 </div>
-                <div class="decoration hide-if-responsive"></div>
-                <div class="one-half-responsive last-column">
-                    <div class="container no-bottom">
-                        <h4>Contact Information</h4>
-                        <p>
-                            <strong>Postal Information</strong><br>
-                            PO Box 16122 Collins Street West<br>
-                            Victoria 8007 Australia
-                        </p>
-                        <p>
-                            <strong>Envato Headquarters</strong><br>
-                            121 King Street, Melbourne <br>
-                            Victoria 3000 Australia
-                        </p>
-                        <p>
-                            <strong>Contact Information:</strong><br>
-                            <a href="tel: +123 456 7890" class="contact-call"><i class="fa fa-phone"></i>+ 123 456 7890</a>
-                            <a href="sms: +123 456 7890" class="contact-text"><i class="fa fa-comments"></i>+ 123 456 7890</a>
-                            <a href="mailto:name@domain.com" class="contact-mail"><i class="fa fa-envelope"></i>mail@doamin.com</a>
-                            <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>enabled.labs</a>
-                            <a href="#" class="contact-twitter"><i class="fa fa-twitter"></i>@iEnabled</a>
-                        </p>
-                    </div>            
-                </div>         
+
                 
-                <div class="decoration"></div>               
+                <div class="page-blog-sidebar">
+                    <div class="blog-sidebar-text hide-if-responsive">
+                        <h4>Some useful things</h4>
+                        <p>
+                            This is the widget section. But remember, this is not a WP Theme, this is a Site Template.
+                            You'll have to conver it to WP if you want it to work with a CMS and not manually.
+                        </p>
+                    </div>
+                    <!--Search Field-->
+                    <div class="blog-sidebar-search full-bottom">
+                        <i class="fa fa-search"></i>
+                        <input type="text" value="Search">
+                    </div>
+                    <!--Recent Post-->
+                    <div class="blog-sidebar-recent-projects full-bottom">
+                        <div class="blog-sidebar-text">
+                            <h5>Recent Projects</h5>
+                            <p>
+                                Remember, this is only a site template, the blog is not connected to anything!
+                            </p>
+                        </div>
+                        <a href="#"><img src="images/pictures/1s.jpg" alt="img"></a>
+                        <a href="#"><img src="images/pictures/2s.jpg" alt="img"></a>
+                        <a href="#"><img src="images/pictures/3s.jpg" alt="img"></a>                        
+                        <a href="#"><img src="images/pictures/4s.jpg" alt="img"></a>
+                        <a href="#"><img src="images/pictures/5s.jpg" alt="img"></a>
+                        <a href="#"><img src="images/pictures/6s.jpg" alt="img"></a>
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="decoration"></div>
+                    <!--Recent Project-->
+                    <div class="blog-sidebar-recent-posts full-bottom">
+                        <div class="blog-sidebar-text">
+                            <h5>Recent Posts</h5>
+                            <p>
+                                Remember, this is only a site template, the blog is not connected to anything!
+                            </p>
+                            <a href="page-blog-post.html">
+                                <strong>Mobile Blog</strong>
+                                <em>Jul 15th 2024</em>
+                                <i class="fa fa-angle-right"></i>
+                            </a>                            
+                            <a href="page-blog-post.html">
+                                <strong>Simple and easy to use</strong>
+                                <em>Jul 15th 2024</em>
+                                <i class="fa fa-angle-right"></i>
+                            </a>                                
+                        </div>
+                    </div>
+                    <div class="decoration"></div>
+                    <div class="blog-sidebar-categories full-bottom">
+                        <div class="blog-sidebar-text">
+                            <h5>Categories</h5>
+                            <p>
+                                Remember, this is only a site template, the blog is not connected to anything!
+                            </p>
+                        </div>
+                        <div class="blog-sidebar-categories">
+                            <a href="#">Web Design<em>9</em><i class="fa fa-angle-right"></i></a>
+                            <a href="#">Web Development<em>8</em><i class="fa fa-angle-right"></i></a>
+                            <a href="#">Mobile Templates<em>5</em><i class="fa fa-angle-right"></i></a>
+                            <a href="#">Off-Topic<em>1</em><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>    
+                    <div class="decoration"></div>
+                    <!--Recent Post-->
+                    <div class="blog-sidebar-recent-projects full-bottom">
+                        <div class="blog-sidebar-text">
+                            <h5>Recent Projects</h5>
+                            <p>
+                                Remember, this is only a site template, the blog is not connected to anything!
+                            </p>
+                        </div>
+                        <a href="#"><img src="images/pictures/1s.jpg" alt="img"></a>
+                        <a href="#"><img src="images/pictures/2s.jpg" alt="img"></a>
+                        <a href="#"><img src="images/pictures/3s.jpg" alt="img"></a>                        
+                        <a href="#"><img src="images/pictures/4s.jpg" alt="img"></a>
+                        <a href="#"><img src="images/pictures/5s.jpg" alt="img"></a>
+                        <a href="#"><img src="images/pictures/6s.jpg" alt="img"></a>
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="decoration"></div>
+                    <!--Recent Project-->
+                    <div class="blog-sidebar-recent-posts full-bottom">
+                        <div class="blog-sidebar-text">
+                            <h5>Recent Posts</h5>
+                            <p>
+                                Remember, this is only a site template, the blog is not connected to anything!
+                            </p>
+                            <a href="page-blog-post.html">
+                                <strong>Mobile Blog</strong>
+                                <em>Jul 15th 2024</em>
+                                <i class="fa fa-angle-right"></i>
+                            </a>                            
+                            <a href="page-blog-post.html">
+                                <strong>Simple and easy to use</strong>
+                                <em>Jul 15th 2024</em>
+                                <i class="fa fa-angle-right"></i>
+                            </a>                                
+                        </div>
+                    </div>
+                    <div class="decoration"></div>
+                    <div class="blog-sidebar-categories full-bottom">
+                        <div class="blog-sidebar-text">
+                            <h5>Categories</h5>
+                            <p>
+                                Remember, this is only a site template, the blog is not connected to anything!
+                            </p>
+                        </div>
+                        <div class="blog-sidebar-categories">
+                            <a href="#">Web Design<em>9</em><i class="fa fa-angle-right"></i></a>
+                            <a href="#">Web Development<em>8</em><i class="fa fa-angle-right"></i></a>
+                            <a href="#">Mobile Templates<em>5</em><i class="fa fa-angle-right"></i></a>
+                            <a href="#">Off-Topic<em>1</em><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="decoration"></div>
+                </div>
+
+                
                 
                 <div class="footer">
                     <p class="center-text">Copyright 2015. All rights reserved.</p>

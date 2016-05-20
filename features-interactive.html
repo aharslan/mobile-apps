@@ -35,7 +35,7 @@
 <script type="text/javascript" src="scripts/custom.js"></script>
 </head>
 
-<body class="left-sidebar"> 
+<body class="dual-sidebar"> 
 
 <div id="preloader">
 	<div id="status">
@@ -73,17 +73,17 @@
                     <i class="fa fa-circle"></i>
                 </a>                
                 <div class="has-submenu">
-                    <a class="menu-item show-submenu" href="#">
+                    <a class="menu-item show-submenu submenu-active" href="#">
                         <i class="fa fa-cog"></i>
                         <em>Features</em>
                         <strong>5</strong>
                     </a> 
-                    <div class="submenu">
+                    <div class="submenu submenu-active">
                         <a class="submenu-item" href="features-typography.html">    <i class="fa fa-angle-right"></i><em>   Typography    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="features-jquery.html">        <i class="fa fa-angle-right"></i><em>   jQuery    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="features-others.html">        <i class="fa fa-angle-right"></i><em>   Others    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="features-sliders.html">       <i class="fa fa-angle-right"></i><em>   Sliders    </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="features-interactive.html">   <i class="fa fa-angle-right"></i><em>   Interactive    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item submenu-item-active" href="features-interactive.html">   <i class="fa fa-angle-right"></i><em>   Interactive    </em><i class="fa fa-circle"></i></a>
                     </div>
                 </div>                 
                 <div class="has-submenu">
@@ -93,11 +93,9 @@
                         <strong>5</strong>
                     </a> 
                     <div class="submenu">
-                        <a class="submenu-item" href="menu-left.html">     <i class="fa fa-angle-right"></i><em>   Left Sidebar    </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="menu-right.html">    <i class="fa fa-angle-right"></i><em>   Right Sidebar    </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="menu-dual.html">     <i class="fa fa-angle-right"></i><em>   Dual Sidebar    </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="menu-top.html">      <i class="fa fa-angle-right"></i><em>   Top Menu    </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="menu-bottom.html">   <i class="fa fa-angle-right"></i><em>   Bottom  Menu    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="index-left.html">     <i class="fa fa-angle-right"></i><em>   Left Sidebar    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="index-right.html">    <i class="fa fa-angle-right"></i><em>   Right Sidebar    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="index-dual.html">     <i class="fa fa-angle-right"></i><em>   Dual Sidebar    </em><i class="fa fa-circle"></i></a>
                     </div>
                 </div>              
                 <div class="has-submenu">
@@ -107,7 +105,7 @@
                         <strong>5</strong>
                     </a> 
                     <div class="submenu">
-                        <a class="submenu-item" href="gallery-round.html">           <i class="fa fa-angle-right"></i><em>   Round    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="gallery-round.html">          <i class="fa fa-angle-right"></i><em>   Round    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="gallery-square.html">         <i class="fa fa-angle-right"></i><em>   Square    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="gallery-adaptive.html">       <i class="fa fa-angle-right"></i><em>   Adaptive    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="gallery-masonry.html">        <i class="fa fa-angle-right"></i><em>   Masonry    </em><i class="fa fa-circle"></i></a>
@@ -168,7 +166,7 @@
                     <i class="fa fa-youtube-play"></i>
                     <em>Videos</em>
                     <i class="fa fa-circle"></i>
-                </a>                     
+                </a>                       
                 <a class="menu-item" href="page-blog.html">
                     <i class="fa fa-pencil"></i>
                     <em>Blog</em>
@@ -262,6 +260,42 @@
                     <em>YouTube</em>
                 </a>    
             </div>
+                        
+            <p class="sidebar-divider">Send an email</p>
+            
+            <div class="container no-bottom">
+                <div class="sidebar-form contact-form no-bottom"> 
+                    
+                    <em>
+                        Your message is important to us and we reply to all of them in less than 48 hours.
+                    </em>
+                    
+                    <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                        Awesome! We'll get back to you!
+                    </div>
+
+                    <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                        <fieldset>
+                            <div class="formValidationError" id="contactNameFieldError">Name is required!</div>             
+                            <div class="formValidationError" id="contactEmailFieldError">Mail address required!</div> 
+                            <div class="formValidationError" id="contactEmailFieldError2">Mail address must be valid!</div> 
+                            <div class="formValidationError" id="contactMessageTextareaError">Message field is empty!</div>   
+                            <div class="formFieldWrap">
+                                <input onfocus="if (this.value=='Name') this.value = ''" onblur="if (this.value=='') this.value = 'Name'" type="text" name="contactNameField" value="Name" class="contactField requiredField" id="contactNameField"/>
+                            </div>
+                            <div class="formFieldWrap">
+                                <input onfocus="if (this.value=='Email') this.value = ''" onblur="if (this.value=='') this.value = 'Email'" type="text" name="contactEmailField" value="Email" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                            </div>
+                            <div class="formTextareaWrap">
+                                <textarea onfocus="if (this.value=='Message') this.value = ''" onblur="if (this.value=='') this.value = 'Message'" name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea">Message</textarea>
+                            </div>
+                            <div class="formSubmitButtonErrorsWrap">
+                                <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="SUBMIT" data-formId="contactForm"/>
+                            </div>
+                        </fieldset>
+                    </form>       
+                </div>
+            </div>
             
             <p class="sidebar-divider">Contact Us</p>
             
@@ -288,86 +322,141 @@
         
         <div id="content" class="snap-content">
             <div class="content">
-            <div class="header-clear"></div>
-            <!--Page content goes here, fixed elements go above the all elements class-->  
+            <div class="header-clear-large"></div>
+            <!--Page content goes here, fixed elements go above the all elements class-->
                 
-                 <div class="container-fullscreen">
-                    <iframe class="responsive-image maps" src="https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed"></iframe>
+                <div class="heading-style-1 container half-bottom">
+                    <a href="#"><i class="fa fa-refresh fa-spin"></i></a>
+                    <h4>Interactive Features</h4>
+                    <div class="heading-block bg-red-dark"></div>
+                    <div class="heading-decoration bg-red-dark"></div>
+                </div>
+                <div class="container">
+                    <p>
+                        Interactive features are modal forms, fixed header and footer notifications. Please note, that
+                        the modal forms are <strong>templates</strong> and are not connected to a database! 
+                    </p>
                 </div>
                 
-                <div class="one-half-responsive">
-                    <h4>Send us an email!</h4>
-                    <p>Use the form to send us a message, it's AJAX and PHP powered and it's easy to use!</p>
-                    <div class="container no-bottom">
-                        <div class="contact-form no-bottom"> 
-                            <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
-                                <div class="big-notification green-notification">
-                                    <h3 class="uppercase">Message Sent </h3>
-                                    <a href="#" class="close-big-notification">x</a>
-                                    <p>Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thank you!</p>
-                                </div>
-                            </div>
+                <div class="decoration"></div>
+                
+                <div class="container">
 
-                            <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
-                                <fieldset>
-                                    <div class="formValidationError bg-red-dark color-white" id="contactNameFieldError">
-                                        <p class="center-text uppercase small-text">Name is required!</p>
-                                    </div>             
-                                    <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError">
-                                        <p class="center-text uppercase small-text">Mail address required!</p>
-                                    </div> 
-                                    <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError2">
-                                        <p class="center-text uppercase small-text">Mail address must be valid!</p>
-                                    </div> 
-                                    <div class="formValidationError bg-red-dark color-white" id="contactMessageTextareaError">
-                                        <p class="center-text uppercase small-text">Message field is empty!</p>
-                                    </div>   
-                                    <div class="formFieldWrap">
-                                        <label class="field-title contactNameField" for="contactNameField">Name:<span>(required)</span></label>
-                                        <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
-                                    </div>
-                                    <div class="formFieldWrap">
-                                        <label class="field-title contactEmailField" for="contactEmailField">Email: <span>(required)</span></label>
-                                        <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
-                                    </div>
-                                    <div class="formTextareaWrap">
-                                        <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: <span>(required)</span></label>
-                                        <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
-                                    </div>
-                                    <div class="formSubmitButtonErrorsWrap">
-                                        <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="SUBMIT" data-formId="contactForm"/>
-                                    </div>
-                                </fieldset>
-                            </form>       
+                    <div class="one-half-responsive">
+                        <h5>Simple Modal Window</h5>
+                        <p>
+                            Customize your alert to show a modal window. You can insert all kinds of text and 
+                            informations in these modals without headaches!
+                        </p>
+                        <a href="#" class="simple-modal">
+                            <img class="preload-image responsive-image full-bottom" data-original="images/presentation/a.png" alt="img">
+                        </a>
+                        <div class="simple-modal-content modal-content rounded-modal">
+                            <img src="images/pictures/3ww.jpg" alt="img" class="responsive-image">
+                            <h4>Basic Modal Dialog</h4>
+                            <p>
+                                For basic modal forms you can use an image, text, and even a button if neccessary to pass on vital
+                                pieces of information to your users. Tap close or outside the window to close the modal.
+                            </p>
+                            <a href="#" class="button button-red button-small round-button modal-close button-center">Close Me</a>
                         </div>
                     </div>
+                        
+                    <div class="decoration hide-if-responsive"></div>
+                    
+                    <div class="one-half-responsive last-column">
+                        <h5>Simple Login Modal Template</h5>
+                        <p>
+                            The design is ready, all you need is to connect it to your page. It's a simple and 
+                            elegant way to login on a mobile without using extra space.
+                        </p>
+                        <a href="#" class="simple-login-modal">
+                            <img class="preload-image responsive-image full-bottom" data-original="images/presentation/b.png" alt="img">
+                        </a>
+                        <div class="simple-login-modal-content modal-content rounded-modal">
+                            <div class="login-modal-wrapper">
+                                <h4>Login</h4>
+                                <input type="text" class="login-modal-user" value="Username">
+                                <input type="password" class="login-modal-pass" value="Password">
+                                <a href="#" class="button-green login-button">Login</a>
+                                <a href="#" class="button-red login-close modal-close">Close</a>
+                                <div class="clear"></div>
+                                <a href="#" class="login-forgot">Forgot your details? <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="decoration"></div>
+                    
+                    <div class="one-half-responsive">
+                        <h5>Social Login Modal Template</h5>
+                        <p>
+                            The design is ready, all you need is to connect it to your page. It's a simple and 
+                            elegant way to login on a mobile without using extra space.
+                        </p>
+
+                        <a href="#" class="social-login-modal">                        
+                            <img class="preload-image responsive-image full-bottom" data-original="images/presentation/c.png" alt="img">
+                        </a>
+                        <div class="social-login-modal-content modal-content rounded-modal">
+                            <div class="login-modal-wrapper">
+                                <h4>Login</h4>
+                                <a href="#" class="facebook-connect"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
+                                <a href="#" class="twitter-connect"><i class="fa fa-twitter"></i>Sign in with Twitter</a>
+                                <em> - or - </em>
+                                <input type="text" class="login-modal-user" value="Username">
+                                <input type="password" class="login-modal-pass" value="Password">
+                                <a href="#" class="button-green login-button">Login</a>
+                                <a href="#" class="button-red login-close modal-close">Close</a>
+                                <div class="clear"></div>
+                                <a href="#" class="login-forgot">Forgot your details? <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="decoratio hide-if-responsive"></div>
+                    
+                    <div class="one-half-responsive last-column">
+                        <h5>Profile Modal. Engage your users!</h5>
+                        <p>
+                            In the age of social media, getting likes and followers is a must, but it's annoying 
+                            sometimes to have your media icons ignored. 
+                        </p>
+
+                        <a href="#" class="social-profile-modal">
+                            <img class="preload-image responsive-image full-bottom" data-original="images/presentation/d.png" alt="img">
+                        </a>
+                        <div class="social-profile-modal-content modal-content rounded-modal">
+                            <img src="images/pictures/3s.jpg" alt="img">
+                            <h3>John Doe</h3>
+                            <strong>Join our social media networks <br>and get the latest news and updates!</strong>
+                            <div class="social-profiles">
+                                <a href="#" class="facebook-profile"><i class="fa fa-facebook"></i>Like</a>             
+                                <a href="#" class="google-profile"><i class="fa fa-google-plus"></i>Subscribe</a>
+                                <a href="#" class="twitter-profile"><i class="fa fa-twitter"></i>Follow</a>   
+                            </div>
+                            <div class="clear"></div>
+                            <a href="#" class="button button-small button-red button-center round-button modal-close">Close</a>
+                        </div>
+                    </div>
+                    
+                    <div class="decoration"></div>
+                    
+                    <h5>There are even more!</h5>
+                    <p>
+                        There are a tone more features with our item, check some more below! Click them and enjoy! 
+                        We're pretty sure you'll find them useful one day!
+                    </p>
+
+                    <a href="#" class="show-share-bottom">Fixed Bottom Share Box</a>            
+
+                    <a class="show-top-notification-1" href="#">Fixed Top Notification</a>                    
+                    <a class="show-bottom-notification-1" href="#">Fixed Bottom Notification</a>
+                    <a class="show-top-notification-2 timer-notification" href="#">Fixed Top Notification With Timeout</a>
+                    <a class="show-bottom-notification-2 timer-notification" href="#">Fixed Bottom Notification With Timeout</a>
                 </div>
-                <div class="decoration hide-if-responsive"></div>
-                <div class="one-half-responsive last-column">
-                    <div class="container no-bottom">
-                        <h4>Contact Information</h4>
-                        <p>
-                            <strong>Postal Information</strong><br>
-                            PO Box 16122 Collins Street West<br>
-                            Victoria 8007 Australia
-                        </p>
-                        <p>
-                            <strong>Envato Headquarters</strong><br>
-                            121 King Street, Melbourne <br>
-                            Victoria 3000 Australia
-                        </p>
-                        <p>
-                            <strong>Contact Information:</strong><br>
-                            <a href="tel: +123 456 7890" class="contact-call"><i class="fa fa-phone"></i>+ 123 456 7890</a>
-                            <a href="sms: +123 456 7890" class="contact-text"><i class="fa fa-comments"></i>+ 123 456 7890</a>
-                            <a href="mailto:name@domain.com" class="contact-mail"><i class="fa fa-envelope"></i>mail@doamin.com</a>
-                            <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>enabled.labs</a>
-                            <a href="#" class="contact-twitter"><i class="fa fa-twitter"></i>@iEnabled</a>
-                        </p>
-                    </div>            
-                </div>         
                 
-                <div class="decoration"></div>               
+                <div class="decoration"></div>
                 
                 <div class="footer">
                     <p class="center-text">Copyright 2015. All rights reserved.</p>
@@ -380,6 +469,8 @@
                     </div>
                 </div>
                                 
+                
+                
             <!-- End of entire page content-->
             </div> 
         </div>
